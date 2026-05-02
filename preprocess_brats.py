@@ -5,17 +5,10 @@ import nibabel as nib
 import cv2
 from tqdm import tqdm
 
-
 BRATS_PATH = "D:\Datasets\BraTS2021_Training_Data" 
-
-
 OUTPUT_PATH = "./processed_dataset"
-
-
 MODALITY = "flair" 
-
 MIN_BRAIN_PIXELS = 1000 
-
 
 def normalize_slice(slice_img):
     """Normalizes MRI slice to 0-255 range for PNG saving."""
