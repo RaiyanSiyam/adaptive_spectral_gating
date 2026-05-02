@@ -19,7 +19,7 @@ DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 print(f"Using Device: {DEVICE}")
 
 
-# SETUP DATA
+# SETUP
 from google.colab import drive
 drive.mount('/content/drive')
 
